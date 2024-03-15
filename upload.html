@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload with Progress Bar | CodingNepal</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>File Uploader</header>
+    <form id="submitform" >
+    <div class="formdiv" id="drop-area">
+      <input class="file-input" type="file" name="files" hidden multiple>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Drag and Drop files here</p>
+      <center class="margin-y">or</center>
+      <span class="mybtn1" id="selectfile">Select Files</span>
+    </div>
+    <section class="uploaded-area">
+       <ul class="showupload">
+        
+            
+          
+       </ul> 
+    </section>
+    <center><button class="mybtn1" type="submit" id="submitupload">Upload Files</button></center>
+</form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="{{url_for('static',filename='js/script.js')}}"></script>
+
+</body>
+</html>
